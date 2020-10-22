@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>filter</key>
+		<string>None</string>
+		<key>name</key>
+		<string>None</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectMono</string>
+		<key>name</key>
+		<string>Mono</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CISepiaTone</string>
+		<key>name</key>
+		<string>Sepia</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectTonal</string>
+		<key>name</key>
+		<string>Tonal</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectNoir</string>
+		<key>name</key>
+		<string>Noir</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectFade</string>
+		<key>name</key>
+		<string>Fade</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectChrome</string>
+		<key>name</key>
+		<string>Chrome</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectProcess</string>
+		<key>name</key>
+		<string>Process</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectTransfer</string>
+		<key>name</key>
+		<string>Transfer</string>
+	</dict>
+	<dict>
+		<key>filter</key>
+		<string>CIPhotoEffectInstant</string>
+		<key>name</key>
+		<string>Instant</string>
+	</dict>
+</array>
+</plist>
