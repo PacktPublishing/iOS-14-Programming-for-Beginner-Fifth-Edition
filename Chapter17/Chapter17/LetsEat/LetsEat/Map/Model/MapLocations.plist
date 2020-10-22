@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>address</key>
+		<string>108 West 2nd Street #104</string>
+		<key>area</key>
+		<string>Los Angeles / Orange County</string>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>cuisines</key>
+		<array>
+			<string>Indian</string>
+			<string>Gastropubs</string>
+		</array>
+		<key>country</key>
+		<string>US</string>
+		<key>id</key>
+		<integer>104173</integer>
+		<key>image_url</key>
+		<string>https://www.opentable.com/img/restimages/104173.jpg</string>
+		<key>lat</key>
+		<real>34.051061</real>
+		<key>long</key>
+		<real>-118.244705</real>
+		<key>mobile_reserve_url</key>
+		<string>http://mobile.opentable.com/opentable/?restId=104173</string>
+		<key>name</key>
+		<string>Badmaash</string>
+		<key>phone</key>
+		<string>2132217466x</string>
+		<key>postal_code</key>
+		<string>90012</string>
+		<key>price</key>
+		<integer>2</integer>
+		<key>reserve_url</key>
+		<string>http://www.opentable.com/single.aspx?rid=104173</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>521 W. 7th Street</string>
+		<key>area</key>
+		<string>Los Angeles / Orange County</string>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>country</key>
+		<string>US</string>
+		<key>id</key>
+		<integer>106741</integer>
+		<key>image_url</key>
+		<string>https://www.opentable.com/img/restimages/106741.jpg</string>
+		<key>lat</key>
+		<real>34.04713499999999</real>
+		<key>long</key>
+		<real>-118.256097</real>
+		<key>mobile_reserve_url</key>
+		<string>http://mobile.opentable.com/opentable/?restId=106741</string>
+		<key>name</key>
+		<string>Q</string>
+		<key>phone</key>
+		<string>2132256285x</string>
+		<key>postal_code</key>
+		<string>90014</string>
+		<key>price</key>
+		<integer>4</integer>
+		<key>reserve_url</key>
+		<string>http://www.opentable.com/single.aspx?rid=106741</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>615 S. Flower Street</string>
+		<key>area</key>
+		<string>Los Angeles / Orange County</string>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>cuisines</key>
+		<array>
+			<string>Indian</string>
+			<string>Gastropubs</string>
+		</array>
+		<key>country</key>
+		<string>US</string>
+		<key>id</key>
+		<integer>19183</integer>
+		<key>image_url</key>
+		<string>https://www.opentable.com/img/restimages/19183.jpg</string>
+		<key>lat</key>
+		<real>34.04934200000001</real>
+		<key>long</key>
+		<real>-118.258174</real>
+		<key>mobile_reserve_url</key>
+		<string>http://mobile.opentable.com/opentable/?restId=19183</string>
+		<key>name</key>
+		<string>Maria&apos;s Italian Kitchen - Downtown</string>
+		<key>phone</key>
+		<string>2136234777</string>
+		<key>postal_code</key>
+		<string>90017</string>
+		<key>price</key>
+		<integer>2</integer>
+		<key>reserve_url</key>
+		<string>http://www.opentable.com/single.aspx?rid=19183</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>8740 Sepulveda Blvd.</string>
+		<key>area</key>
+		<string>Los Angeles / Orange County</string>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>cuisines</key>
+		<array>
+			<string>Indian</string>
+			<string>Gastropubs</string>
+		</array>
+		<key>country</key>
+		<string>US</string>
+		<key>id</key>
+		<integer>34459</integer>
+		<key>image_url</key>
+		<string>https://www.opentable.com/img/restimages/34459.jpg</string>
+		<key>lat</key>
+		<real>33.95767500000001</real>
+		<key>long</key>
+		<real>-118.39573</real>
+		<key>mobile_reserve_url</key>
+		<string>http://mobile.opentable.com/opentable/?restId=34459</string>
+		<key>name</key>
+		<string>Chalet Edelweiss</string>
+		<key>phone</key>
+		<string>3106458740</string>
+		<key>postal_code</key>
+		<string>90045</string>
+		<key>price</key>
+		<integer>2</integer>
+		<key>reserve_url</key>
+		<string>http://www.opentable.com/single.aspx?rid=34459</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>1325 Echo Park Avenue</string>
+		<key>area</key>
+		<string>Los Angeles / Orange County</string>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>cuisines</key>
+		<array>
+			<string>Indian</string>
+			<string>Gastropubs</string>
+		</array>
+		<key>country</key>
+		<string>US</string>
+		<key>id</key>
+		<integer>151228</integer>
+		<key>image_url</key>
+		<string>https://www.opentable.com/img/restimages/151228.jpg</string>
+		<key>lat</key>
+		<real>34.07772100000001</real>
+		<key>long</key>
+		<real>-118.256968</real>
+		<key>mobile_reserve_url</key>
+		<string>http://mobile.opentable.com/opentable/?restId=151228</string>
+		<key>name</key>
+		<string>Red Hill Restaurant</string>
+		<key>phone</key>
+		<string>2134820886</string>
+		<key>postal_code</key>
+		<string>90026</string>
+		<key>price</key>
+		<integer>2</integer>
+		<key>reserve_url</key>
+		<string>http://www.opentable.com/single.aspx?rid=151228</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+</array>
+</plist>

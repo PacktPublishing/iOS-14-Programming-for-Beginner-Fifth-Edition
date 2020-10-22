@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>city</key>
+		<string>Aspen</string>
+		<key>state</key>
+		<string>CO</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Boston</string>
+		<key>state</key>
+		<string>MA</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Charleston</string>
+		<key>state</key>
+		<string>NC</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Chicago</string>
+		<key>state</key>
+		<string>IL</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Houston</string>
+		<key>state</key>
+		<string>TX</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Las Vegas</string>
+		<key>state</key>
+		<string>NV</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Los Angeles</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Miami</string>
+		<key>state</key>
+		<string>FL</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>New Orleans</string>
+		<key>state</key>
+		<string>LA</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>New York</string>
+		<key>state</key>
+		<string>NY</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Philadelphia</string>
+		<key>state</key>
+		<string>PA</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Portland</string>
+		<key>state</key>
+		<string>OR</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>San Antoonio</string>
+		<key>state</key>
+		<string>TX</string>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>San Francisto</string>
+		<key>state</key>
+		<string>CA</string>
+	</dict>
+</array>
+</plist>

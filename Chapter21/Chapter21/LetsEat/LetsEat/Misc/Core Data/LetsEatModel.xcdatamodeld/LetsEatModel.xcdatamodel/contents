@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20A5395g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RestaurantPhoto" representedClassName="RestaurantPhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="restaurantID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="String"/>
+    </entity>
+    <entity name="Review" representedClassName="Review" syncable="YES" codeGenerationType="class">
+        <attribute name="customerReview" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="restaurantID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uuid" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="RestaurantPhoto" positionX="-54" positionY="54" width="128" height="14"/>
+        <element name="Review" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
+</model>
