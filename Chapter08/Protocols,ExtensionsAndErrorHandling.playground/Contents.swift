@@ -1,35 +1,29 @@
 import UIKit
 
-// Protocols
-
 protocol CalorieCountProtocol {
     var calories: Int { get }
     func description() -> String
 }
 
-class Burger : CalorieCountProtocol {
+class Burger: CalorieCountProtocol {
     let calories = 800
     func description() -> String {
         return "This burger has \(calories) calories"
     }
 }
-
-struct Fries : CalorieCountProtocol {
+struct Fries: CalorieCountProtocol {
     let calories = 500
     func description() -> String {
         return "These fries have \(calories) calories"
     }
     
 }
-
-// Extensions
-
 enum Sauce {
     case chili
     case tomato
 }
 
-extension Sauce : CalorieCountProtocol {
+extension Sauce: CalorieCountProtocol {
     var calories: Int {
         switch self {
         case .chili:
@@ -46,7 +40,8 @@ extension Sauce : CalorieCountProtocol {
 let burger = Burger()
 let fries = Fries()
 let sauce = Sauce.tomato
-let foodArray : [CalorieCountProtocol] = [burger, fries, sauce]
+
+let foodArray: [CalorieCountProtocol] = [burger, fries, sauce]
 
 var totalCalories = 0
 for food in foodArray {
@@ -54,24 +49,25 @@ for food in foodArray {
 }
 print(totalCalories)
 
-// Error Handling
 
 enum WebpageError: Error {
     case success
     case failure(Int)
 }
 
-func getWebpage(uRL: String, siteUp: Bool) throws -> String {
+func getWebPage(uRL: String, siteUp: Bool) throws -> String {
     if siteUp == false {
         throw WebpageError.failure(404)
     }
     return "Success"
 }
+
 let webpageURL = "http://www.apple.com"
-let webSiteUp = false
+let websiteUp = false
+
 do {
-    let status = try getWebpage(uRL: webpageURL, siteUp: webSiteUp)
+    let status = try getWebPage(uRL: webpageURL, siteUp: websiteUp)
     print(status)
-} catch {
+} catch  {
     print(error)
 }

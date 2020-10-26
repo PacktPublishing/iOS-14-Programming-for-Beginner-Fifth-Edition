@@ -3,6 +3,7 @@ import UIKit
 // Arrays
 
 var shoppingList = ["Eggs", "Milk"]
+
 shoppingList.count
 shoppingList.isEmpty
 
@@ -30,7 +31,7 @@ for shoppingListItem in shoppingList[1...] {
 
 // Dictionaries
 
-var contactList = ["Shah" : "+60123456789", "Akhil" : "+0223456789"]
+var contactList = ["Shah":"+60123456789", "Akhil":"+0223456789"]
 
 contactList.count
 contactList.isEmpty
@@ -49,7 +50,6 @@ contactList
 var oldDictValue = contactList.removeValue(forKey: "Akhil")
 oldDictValue
 contactList
-
 
 for (name, contactNumber) in contactList {
     print("\(name) : \(contactNumber)")
@@ -84,11 +84,7 @@ movieGenres.symmetricDifference(movieGenres2)
 let movieGenresSubset: Set = ["Horror", "Romantic Comedy"]
 let movieGenresSuperset: Set = ["Horror", "Romantic Comedy", "War", "Science Fiction", "Fantasy"]
 let movieGenresDisjoint: Set = ["Bollywood"]
-
 movieGenres == movieGenres2
 movieGenresSubset.isSubset(of: movieGenres)
 movieGenresSuperset.isSuperset(of: movieGenres)
 movieGenresDisjoint.isDisjoint(with: movieGenres)
-
-
-

@@ -1,31 +1,33 @@
 import UIKit
 
-//Conditionals
-
-let isPictureVisible = true
+let isPictureVisible = false
 if isPictureVisible {
     print("Picture is visible")
 }
 
+let isRestaurantFound = true
+if isRestaurantFound == false {
+    print("Restaurant was not found")
+}
+
 let drinkingAgeLimit = 21
-var customerAge = 23
+var customerAge = 19
 if customerAge < drinkingAgeLimit {
     print("Under age limit")
 } else {
     print("Over age limit")
 }
 
-
- var trafficLight = "Yellow"
- if trafficLight == "Red" {
+var trafficLight = "Yellow"
+if trafficLight == "Red" {
     print("Stop")
- } else if trafficLight == "Yellow" {
+} else if trafficLight == "Yellow" {
     print("Caution")
- } else if trafficLight == "Green" {
+} else if trafficLight == "Green" {
     print("Go")
- } else {
+} else {
     print("Invalid Color")
- }
+}
 
 trafficLight = "Yellow"
 switch trafficLight {
@@ -39,13 +41,11 @@ default:
     print("Invalid color")
 }
 
-// Optionals
-
 var spouseName: String?
-// spouseName = nil
-spouseName = "Nia"
+spouseName = nil
 print(spouseName)
 if let spouse = spouseName {
     let greeting = "Hello, " + spouse
     print(greeting)
 }
+
