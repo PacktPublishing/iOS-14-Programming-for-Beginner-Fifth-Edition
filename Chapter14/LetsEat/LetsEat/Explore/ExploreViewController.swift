@@ -2,7 +2,7 @@
 //  ExploreViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 02/10/2020.
+//  Created by iOS 14 Programming on 26/10/2020.
 //
 
 import UIKit
@@ -15,11 +15,10 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return manager.numberOfItems()
+        manager.numberOfItems()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
         let item = manager.explore(at: indexPath)
         cell.lblName.text = item.name
@@ -29,15 +28,16 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
     let manager = ExploreDataManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.fetch()
     }
     
-    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue){
         
     }
+
 }

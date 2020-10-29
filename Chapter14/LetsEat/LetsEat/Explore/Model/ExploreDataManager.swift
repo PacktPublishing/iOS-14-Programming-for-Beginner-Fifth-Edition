@@ -2,7 +2,7 @@
 //  ExploreDataManager.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 08/10/2020.
+//  Created by iOS 14 Programming on 27/10/2020.
 //
 
 import Foundation
@@ -12,12 +12,12 @@ class ExploreDataManager {
     fileprivate var items:[ExploreItem] = []
     
     func fetch() {
-        for data in loadData() {
+        for data in loadData()  {
             items.append(ExploreItem(dict: data))
         }
     }
     
-    fileprivate func loadData() -> [[String: AnyObject]] {
+    fileprivate func loadData() -> [[String:AnyObject]] {
         guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"), let items = NSArray(contentsOfFile: path) else {
             return [[:]]
         }
@@ -28,7 +28,7 @@ class ExploreDataManager {
         items.count
     }
     
-    func explore(at index: IndexPath) -> ExploreItem {
+    func explore(at index:IndexPath) -> ExploreItem {
         items[index.item]
     }
 }

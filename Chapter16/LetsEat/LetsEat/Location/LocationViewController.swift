@@ -2,7 +2,7 @@
 //  LocationViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 09/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import UIKit
@@ -10,7 +10,6 @@ import UIKit
 class LocationViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     let manager = LocationDataManager()
     
     override func viewDidLoad() {
@@ -26,6 +25,7 @@ private extension LocationViewController {
         manager.fetch()
     }
 }
+
 // MARK: UITableViewDataSource
 extension LocationViewController: UITableViewDataSource {
     
@@ -38,5 +38,5 @@ extension LocationViewController: UITableViewDataSource {
         cell.textLabel?.text = manager.locationItem(at: indexPath)
         return cell
     }
-
+    
 }

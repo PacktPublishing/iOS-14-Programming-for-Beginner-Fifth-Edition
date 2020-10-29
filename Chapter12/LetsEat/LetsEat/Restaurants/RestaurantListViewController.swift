@@ -2,15 +2,15 @@
 //  RestaurantListViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 04/10/2020.
+//  Created by iOS 14 Programming on 26/10/2020.
 //
 
 import UIKit
 
 class RestaurantListViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet weak var collectionView: UICollectionView!
-
+    @IBOutlet var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,4 +24,7 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath)
     }
+    
+
+
 }
