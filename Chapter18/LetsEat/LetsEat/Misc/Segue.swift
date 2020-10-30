@@ -2,12 +2,12 @@
 //  Segue.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 10/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import Foundation
 
-enum Segue:String {
+enum Segue: String {
     case showDetail
     case showRating
     case showReview

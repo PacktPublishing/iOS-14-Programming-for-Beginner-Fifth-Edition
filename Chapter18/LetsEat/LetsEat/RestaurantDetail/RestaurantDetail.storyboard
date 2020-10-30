@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gUI-DA-nYm">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -457,14 +457,14 @@
                         <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="soV-Zu-HEK"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnHeart" destination="soV-Zu-HEK" id="wkA-6K-Cym"/>
-                        <outlet property="imgMap" destination="eZM-l0-bwa" id="qMX-3v-nTz"/>
-                        <outlet property="lblAddress" destination="syM-kD-sxl" id="YF7-N5-mke"/>
-                        <outlet property="lblCuisine" destination="d71-Eq-mMn" id="4Za-7V-qGR"/>
-                        <outlet property="lblHeaderAddress" destination="UYm-Ip-FZy" id="ygF-wr-20A"/>
-                        <outlet property="lblName" destination="6er-aK-n02" id="UEN-iz-3lv"/>
-                        <outlet property="lblOverallRating" destination="zON-CP-XRT" id="YBn-su-zjB"/>
-                        <outlet property="lblTableDetails" destination="QHZ-op-gz0" id="RZU-05-rgo"/>
+                        <outlet property="bthHeart" destination="soV-Zu-HEK" id="z5k-7L-AtO"/>
+                        <outlet property="imgMap" destination="eZM-l0-bwa" id="u7Q-oc-krr"/>
+                        <outlet property="lblAddress" destination="syM-kD-sxl" id="XYy-J7-5cu"/>
+                        <outlet property="lblCuisine" destination="d71-Eq-mMn" id="u4k-bZ-qwI"/>
+                        <outlet property="lblHeaderAddress" destination="UYm-Ip-FZy" id="0PV-KZ-Vkj"/>
+                        <outlet property="lblName" destination="6er-aK-n02" id="eBC-ZZ-Tgx"/>
+                        <outlet property="lblOverallRating" destination="zON-CP-XRT" id="MLc-z3-cHz"/>
+                        <outlet property="lblTableDetails" destination="QHZ-op-gz0" id="3hh-TY-yzP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbX-wO-Y8z" userLabel="First Responder" sceneMemberID="firstResponder"/>

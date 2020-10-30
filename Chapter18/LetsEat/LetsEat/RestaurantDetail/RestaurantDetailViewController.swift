@@ -2,7 +2,7 @@
 //  RestaurantDetailViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 10/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import MapKit
 class RestaurantDetailViewController: UITableViewController {
     
     // Nav Bar
-    @IBOutlet weak var btnHeart:UIBarButtonItem!
+    @IBOutlet weak var bthHeart: UIBarButtonItem!
     // Cell One
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblCuisine: UILabel!
@@ -25,7 +25,6 @@ class RestaurantDetailViewController: UITableViewController {
     // Cell Nine
     @IBOutlet weak var imgMap: UIImageView!
     
-    
     var selectedRestaurant: RestaurantItem?
 
     override func viewDidLoad() {
@@ -34,7 +33,6 @@ class RestaurantDetailViewController: UITableViewController {
     }
 }
 
-//MARK: Private
 private extension RestaurantDetailViewController {
     
     func initialize() {
@@ -59,25 +57,28 @@ private extension RestaurantDetailViewController {
     }
     
     func createMap() {
-        guard let annotation = selectedRestaurant, let long = annotation.long, let lat = annotation.lat else { return }
+        guard let annotation = selectedRestaurant, let long = annotation.long, let lat = annotation.lat else {
+            return
+        }
         let location = CLLocationCoordinate2D(latitude: lat, longitude: long)
         takeSnapShot(with: location)
     }
     
     func takeSnapShot(with location: CLLocationCoordinate2D) {
-        let mapSnapshotOptions = MKMapSnapshotter.Options()
+        let mapSnapShotOptions = MKMapSnapshotter.Options()
         var loc = location
         let polyline = MKPolyline(coordinates: &loc, count: 1)
         let region = MKCoordinateRegion(polyline.boundingMapRect)
-        mapSnapshotOptions.region = region
-        mapSnapshotOptions.scale = UIScreen.main.scale
-        mapSnapshotOptions.size = CGSize(width: 340, height: 208)
-        mapSnapshotOptions.showsBuildings = true
-        mapSnapshotOptions.pointOfInterestFilter = .includingAll
-        let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions)
-        snapShotter.start() { snapshot, error in
+        mapSnapShotOptions.region = region
+        mapSnapShotOptions.scale = UIScreen.main.scale
+        mapSnapShotOptions.size = CGSize(width: 340, height: 208)
+        mapSnapShotOptions.showsBuildings = true
+        mapSnapShotOptions.pointOfInterestFilter = .includingAll
+        let snapShotter = MKMapSnapshotter(options: mapSnapShotOptions)
+        snapShotter.start() {
+            snapshot, error in
             guard let snapshot = snapshot else { return }
-            UIGraphicsBeginImageContextWithOptions(mapSnapshotOptions.size, true, 0)
+            UIGraphicsBeginImageContextWithOptions(mapSnapShotOptions.size, true, 0)
             snapshot.image.draw(at: .zero)
             let identifier = "custompin"
             let annotation = MKPointAnnotation()
@@ -103,5 +104,4 @@ private extension RestaurantDetailViewController {
             }
         }
     }
-    
 }

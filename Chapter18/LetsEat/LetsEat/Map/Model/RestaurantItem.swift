@@ -2,7 +2,7 @@
 //  RestaurantItem.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 10/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import MapKit
 class RestaurantItem: NSObject, MKAnnotation, Decodable {
     
     var name: String?
-    var cuisines:[String] = []
+    var cuisines: [String] = []
     var lat: Double?
     var long: Double?
     var address: String?
@@ -32,6 +32,8 @@ class RestaurantItem: NSObject, MKAnnotation, Decodable {
         case restaurantID = "id"
     }
     
+   
+    
     var coordinate: CLLocationCoordinate2D {
         guard let lat = lat, let long = long else {
             return CLLocationCoordinate2D()
@@ -44,11 +46,11 @@ class RestaurantItem: NSObject, MKAnnotation, Decodable {
     }
     
     var subtitle: String? {
-        if cuisines.isEmpty {return ""}
-        else if cuisines.count == 1 {return cuisines.first}
-        else {return cuisines.joined(separator:", ")}
+        if cuisines.isEmpty { return "" }
+        else if cuisines.count == 1 { return cuisines.first }
+        else { return cuisines.joined(separator: ", ")
+            
+        }
     }
-    
-
-
+ 
 }
