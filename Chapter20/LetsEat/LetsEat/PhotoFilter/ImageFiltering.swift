@@ -2,19 +2,21 @@
 //  ImageFiltering.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 16/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import UIKit
 import CoreImage
+
 protocol ImageFiltering {
-    func apply(filter:String, originalImage:UIImage) -> UIImage
+    func apply(filter: String, originalImage: UIImage) -> UIImage
 }
+
 extension ImageFiltering {
-    func apply(filter:String, originalImage:UIImage) -> UIImage {
+    func apply(filter: String, originalImage: UIImage) -> UIImage {
         let initialCIImage = CIImage(image: originalImage, options: nil)
         let originalOrientation = originalImage.imageOrientation
-        guard let ciFilter = CIFilter(name:filter) else {
+        guard let ciFilter = CIFilter(name: filter) else {
             print("filter not found")
             return UIImage()
         }
