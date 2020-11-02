@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 24/09/2020.
+//  Created by iOS 14 Programming on 26/10/2020.
 //
 
 import UIKit
@@ -30,10 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+
+
 }
 
-extension CoreDataManager {
+extension CoreDataManager{
     static var shared = CoreDataManager()
 }
-
-

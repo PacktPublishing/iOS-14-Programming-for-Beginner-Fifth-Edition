@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "46B447A82540E65B006D82C8"
+               BlueprintIdentifier = "464A2CD9254E41B600E76210"
                BuildableName = "LetsEatAppClip.app"
                BlueprintName = "LetsEatAppClip"
                ReferencedContainer = "container:LetsEat.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "46B447A82540E65B006D82C8"
+            BlueprintIdentifier = "464A2CD9254E41B600E76210"
             BuildableName = "LetsEatAppClip.app"
             BlueprintName = "LetsEatAppClip"
             ReferencedContainer = "container:LetsEat.xcodeproj">
@@ -68,7 +68,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "46B447A82540E65B006D82C8"
+            BlueprintIdentifier = "464A2CD9254E41B600E76210"
             BuildableName = "LetsEatAppClip.app"
             BlueprintName = "LetsEatAppClip"
             ReferencedContainer = "container:LetsEat.xcodeproj">

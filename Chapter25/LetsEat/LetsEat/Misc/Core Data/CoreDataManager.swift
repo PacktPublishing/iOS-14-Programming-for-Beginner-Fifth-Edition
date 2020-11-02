@@ -2,20 +2,23 @@
 //  CoreDataManager.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 17/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import Foundation
 import CoreData
 
-struct CoreDataManager{
+struct CoreDataManager {
+    
     let container: NSPersistentContainer
     
     init() {
         container = NSPersistentContainer(name: "LetsEatModel")
         container.loadPersistentStores {
             (storeDesc, error) in
-            error.map {print($0)}
+            error.map {
+                print ($0)
+            }
         }
     }
     
@@ -41,7 +44,9 @@ struct CoreDataManager{
         }
     }
     
-    func addPhoto(_ item:RestaurantPhotoItem) {
+    
+    
+    func addPhoto(_ item: RestaurantPhotoItem) {
         let photo = RestaurantPhoto(context: container.viewContext)
         photo.date = Date()
         photo.photo = item.photoData
@@ -64,7 +69,7 @@ struct CoreDataManager{
                 items.append(ReviewItem(review: review))
             }
             return items
-        } catch {
+        } catch  {
             fatalError("Failed to fetch reviews: \(error)")
         }
     }
@@ -81,7 +86,7 @@ struct CoreDataManager{
                 items.append(RestaurantPhotoItem(restaurantPhoto: restaurantPhoto))
             }
             return items
-        } catch {
+        } catch  {
             fatalError("Failed to fetch photos: \(error)")
         }
     }

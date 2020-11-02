@@ -2,7 +2,7 @@
 //  Device.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 18/10/2020.
+//  Created by iOS 14 Programming on 31/10/2020.
 //
 
 import UIKit

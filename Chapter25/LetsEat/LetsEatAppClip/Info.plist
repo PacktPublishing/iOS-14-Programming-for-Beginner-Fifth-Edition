@@ -32,7 +32,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This app clip uses the camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app clip uses the photo library</string>
+	<string>This app clip uses the Photo Library</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

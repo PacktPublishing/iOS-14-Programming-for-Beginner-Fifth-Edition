@@ -2,17 +2,16 @@
 //  NoDataView.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 14/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import UIKit
 
 class NoDataView: UIView {
-    
+
     var view: UIView!
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var lblDesc: UILabel!
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -22,7 +21,6 @@ class NoDataView: UIView {
         super.init(coder: coder)
         setupView()
     }
-    
     
     func loadViewFromNib() -> UIView {
         let nib = UINib(nibName: "NoDataView", bundle: Bundle.main)

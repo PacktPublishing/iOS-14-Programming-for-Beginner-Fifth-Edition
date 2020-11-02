@@ -2,7 +2,7 @@
 //  ReviewFormViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 15/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import UIKit
@@ -19,18 +19,23 @@ class ReviewFormViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(selectedRestaurantID as Any)
+
     }
+
 }
 
 private extension ReviewFormViewController {
+    
     @IBAction func onSaveTapped(_ sender: Any) {
         var item = ReviewItem()
         item.name = tfName.text
         item.title = tfTitle.text
         item.customerReview = tvReview.text
         item.restaurantID = selectedRestaurantID
-        item.rating = ratingsView.rating
+        item.rating = Double(ratingsView.rating)
         CoreDataManager.shared.addReview(item)
         dismiss(animated: true, completion: nil)
     }
+    
 }
+

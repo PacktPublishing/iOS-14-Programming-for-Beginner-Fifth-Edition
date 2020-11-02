@@ -2,7 +2,7 @@
 //  PhotoFilterViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 16/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import UIKit
@@ -10,21 +10,23 @@ import AVFoundation
 import MobileCoreServices
 
 class PhotoFilterViewController: UIViewController {
+    
     var image: UIImage?
     var thumbnail: UIImage?
     let manager = FilterManager()
-    var selectedRestaurantID:Int?
-    var filters:[FilterItem] = []
+    var selectedRestaurantID: Int?
+    var filters: [FilterItem] = []
+    
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var imgExample: UIImageView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
     }
 }
 
-//MARK: - Private Extension
+// MARK: - Private Extension
 private extension PhotoFilterViewController {
     
     func initialize() {
@@ -43,7 +45,7 @@ private extension PhotoFilterViewController {
         }
     }
     
-    func setupCollectionView(){
+    func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
@@ -63,8 +65,12 @@ private extension PhotoFilterViewController {
         case .restricted, .denied:
             break
         case .notDetermined:
-            AVCaptureDevice.requestAccess(for: cameraMediaType){ granted in
-                if granted { self.showCameraUserInterface() }
+            AVCaptureDevice.requestAccess(for: cameraMediaType) { granted in
+                if granted {
+                    DispatchQueue.main.async {
+                        self.showCameraUserInterface()
+                    }
+                }
             }
         }
     }
@@ -86,6 +92,7 @@ private extension PhotoFilterViewController {
     @IBAction func onSaveTapped(_ sender: AnyObject) {
         self.checkSavedPhoto()
     }
+    
 }
 
 extension PhotoFilterViewController: UICollectionViewDataSource {
@@ -105,6 +112,7 @@ extension PhotoFilterViewController: UICollectionViewDataSource {
 }
 
 extension PhotoFilterViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenRect = collectionView.frame.size.height
         let screenHt = screenRect - 14
@@ -117,12 +125,12 @@ extension PhotoFilterViewController: UIImagePickerControllerDelegate, UINavigati
     func showCameraUserInterface() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        
+        #if targetEnvironment(simulator)
         imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-        /*
+        #else
         imagePicker.sourceType = UIImagePickerController.SourceType.camera
         imagePicker.showsCameraControls = true
-        */
+        #endif
         imagePicker.mediaTypes = [kUTTypeImage as String]
         imagePicker.allowsEditing = true
         self.present(imagePicker, animated: true, completion: nil)
@@ -131,24 +139,28 @@ extension PhotoFilterViewController: UIImagePickerControllerDelegate, UINavigati
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         if let img = image {
             self.thumbnail = generate(image: img, ratio: CGFloat(102))
             self.image = generate(image: img, ratio: CGFloat(752))
         }
-        picker.dismiss(animated: true){ self.showApplyFilter()}
+        picker.dismiss(animated: true){
+            self.showApplyFilter()
+        }
     }
+    
     func generate(image: UIImage, ratio: CGFloat) -> UIImage {
         let size = image.size
         var croppedSize: CGSize?
-        var offsetX:CGFloat = 0.0
-        var offsetY:CGFloat = 0.0
+        var offsetX: CGFloat = 0.0
+        var offsetY: CGFloat = 0.0
         if size.width > size.height {
-            offsetX = (size.height - size.width)/2
+            offsetX = (size.height - size.width) / 2
             croppedSize = CGSize(width: size.height, height: size.height)
         } else {
-            offsetY = (size.width - size.height)/2
+            offsetY = (size.width - size.height) / 2
             croppedSize = CGSize(width: size.width, height: size.width)
         }
         guard let cropped = croppedSize, let cgImage = image.cgImage else {

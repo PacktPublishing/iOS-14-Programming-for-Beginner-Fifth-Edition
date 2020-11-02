@@ -2,12 +2,12 @@
 //  AppDelegate.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 24/09/2020.
+//  Created by iOS 14 Programming on 26/10/2020.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -30,21 +30,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-}
 
-extension CoreDataManager {
-    static var shared = CoreDataManager()
+
 }
 
 private extension AppDelegate {
+    
     func initialize() {
         setupDefaultColors()
     }
+    
     func setupDefaultColors() {
         UITabBar.appearance().tintColor = .systemRed
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.systemRed], for: UIControl.State.selected)
         UINavigationBar.appearance().tintColor = .systemRed
         UITabBar.appearance().isTranslucent = false
     }
+}
+
+extension CoreDataManager{
+    static var shared = CoreDataManager()
 }
 

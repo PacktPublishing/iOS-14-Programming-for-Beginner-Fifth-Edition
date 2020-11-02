@@ -2,7 +2,7 @@
 //  LetsEatWidget.swift
 //  LetsEatWidget
 //
-//  Created by iOS 14 Programming on 20/10/2020.
+//  Created by iOS 14 Programming on 01/11/2020.
 //
 
 import WidgetKit
@@ -10,26 +10,23 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), restaurantTitle: "LetsEat", restaurantSubtitle: "")
+        SimpleEntry(date: Date(), restaurantTitle: "LetsEat", restaurantSubTitle: "")
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), restaurantTitle: "LetsEat", restaurantSubtitle: "")
+        let entry = SimpleEntry(date: Date(), restaurantTitle: "LetsEat", restaurantSubTitle: "")
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         var restaurantItems: [RestaurantItem] = []
         let manager = MapDataManager()
-        manager.fetch{ (annotations) in restaurantItems = annotations
-        }
+        manager.fetch{ (annotations) in restaurantItems = annotations}
         for minuteOffset in 0 ..< restaurantItems.count {
             let entryDate = Calendar.current.date(byAdding: .minute, value: minuteOffset * 5, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, restaurantTitle: restaurantItems[minuteOffset].title!, restaurantSubtitle: restaurantItems[minuteOffset].subtitle!)
+            let entry = SimpleEntry(date: entryDate, restaurantTitle: restaurantItems[minuteOffset].title!, restaurantSubTitle: restaurantItems[minuteOffset].subtitle!)
             entries.append(entry)
         }
 
@@ -41,7 +38,8 @@ struct Provider: TimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     var restaurantTitle: String
-    var restaurantSubtitle: String
+    var restaurantSubTitle: String
+    
 }
 
 struct LetsEatWidgetEntryView : View {
@@ -56,14 +54,13 @@ struct LetsEatWidgetEntryView : View {
                     .foregroundColor(.white)
                     .bold()
                     .minimumScaleFactor(0.5)
-                Text(entry.restaurantSubtitle)
+                Text(entry.restaurantSubTitle)
                     .font(.body)
                     .foregroundColor(.gray)
                     .bold()
                     .minimumScaleFactor(0.5)
             }.padding()
         }
-        
     }
 }
 
@@ -82,7 +79,7 @@ struct LetsEatWidget: Widget {
 
 struct LetsEatWidget_Previews: PreviewProvider {
     static var previews: some View {
-        LetsEatWidgetEntryView(entry: SimpleEntry(date: Date(), restaurantTitle: "The Tap Trailhouse", restaurantSubtitle: "Brewery, Burgers, American"))
+        LetsEatWidgetEntryView(entry: SimpleEntry(date: Date(), restaurantTitle: "The Tap Trailhouse", restaurantSubTitle: "Brewery, Burgers, American"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

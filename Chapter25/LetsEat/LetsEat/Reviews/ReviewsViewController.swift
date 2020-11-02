@@ -2,23 +2,22 @@
 //  ReviewsViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 17/10/2020.
+//  Created by iOS 14 Programming on 31/10/2020.
 //
 
 import UIKit
 
 class ReviewsViewController: UIViewController {
-    
+
     @IBOutlet var collectionView: UICollectionView!
     var selectedRestaurantID: Int?
     var reviews: [ReviewItem] = []
-    var dateFormatter:
-        DateFormatter = {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "MMM dd, yyyy"
-            return formatter
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd, yyy"
+        return formatter
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
@@ -31,6 +30,7 @@ class ReviewsViewController: UIViewController {
 }
 
 private extension ReviewsViewController {
+    
     func initialize() {
         setupCollectionView()
     }
@@ -61,9 +61,8 @@ private extension ReviewsViewController {
     }
 }
 
-extension ReviewsViewController:
+extension ReviewsViewController: UICollectionViewDataSource {
     
-    UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         reviews.count
     }
@@ -91,7 +90,7 @@ extension ReviewsViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: 200)
         } else {
             let width = collectionView.frame.size.width - 21
-            return CGSize(width: width, height: 200 )
+            return CGSize(width: width, height: 200)
         }
     }
 }

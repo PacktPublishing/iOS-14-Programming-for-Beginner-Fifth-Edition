@@ -2,7 +2,7 @@
 //  RestaurantPhotoItem.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 17/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ struct RestaurantPhotoItem {
     }
 }
 extension RestaurantPhotoItem {
-    init(restaurantPhoto:RestaurantPhoto) {
+    init(restaurantPhoto: RestaurantPhoto) {
         self.restaurantID = Int(restaurantPhoto.restaurantID)
         if let restaurantPhoto = restaurantPhoto.photo {
             self.photo = UIImage(data: restaurantPhoto, scale: 1.0)

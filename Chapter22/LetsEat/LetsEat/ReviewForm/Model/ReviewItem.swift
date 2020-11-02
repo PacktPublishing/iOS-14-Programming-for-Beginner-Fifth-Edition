@@ -2,11 +2,10 @@
 //  ReviewItem.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 17/10/2020.
+//  Created by iOS 14 Programming on 30/10/2020.
 //
 
 import UIKit
-
 struct ReviewItem {
     var rating: Double?
     var name: String?
@@ -16,9 +15,8 @@ struct ReviewItem {
     var restaurantID: Int?
     var uuid = UUID().uuidString
 }
-
 extension ReviewItem {
-    init(review:Review) {
+    init(review: Review) {
         if let reviewDate = review.date {
             self.date = reviewDate
         }

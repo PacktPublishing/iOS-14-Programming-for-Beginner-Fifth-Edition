@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hS7-gB-9nH">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,20 +143,20 @@
                     <navigationItem key="navigationItem" id="HhK-Tr-uQT">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="DoS-wK-OFu">
                             <connections>
-                                <segue destination="Wbq-hq-Or1" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="m02-83-uda"/>
+                                <segue destination="Wbq-hq-Or1" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="AH5-zF-S3T"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDv-S1-VFB">
                             <connections>
-                                <action selector="onSaveTapped:" destination="FMe-3H-aSV" id="PXh-LU-mhp"/>
+                                <action selector="onSaveTapped:" destination="FMe-3H-aSV" id="fC5-ZN-r0C"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ratingsView" destination="Jgv-x1-Dm8" id="cnf-No-YIx"/>
-                        <outlet property="tfName" destination="uwv-vD-pti" id="Ybc-DH-YQn"/>
-                        <outlet property="tfTitle" destination="jdr-kq-Djw" id="vib-VM-JEF"/>
-                        <outlet property="tvReview" destination="mfP-Ls-LpI" id="UcE-83-E9Q"/>
+                        <outlet property="ratingsView" destination="Jgv-x1-Dm8" id="y7K-Lm-ICA"/>
+                        <outlet property="tfName" destination="uwv-vD-pti" id="hZe-fp-zKq"/>
+                        <outlet property="tfTitle" destination="jdr-kq-Djw" id="rOb-U4-H3G"/>
+                        <outlet property="tvReview" destination="mfP-Ls-LpI" id="sm5-Ac-TTR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoT-q7-XLM" userLabel="First Responder" sceneMemberID="firstResponder"/>

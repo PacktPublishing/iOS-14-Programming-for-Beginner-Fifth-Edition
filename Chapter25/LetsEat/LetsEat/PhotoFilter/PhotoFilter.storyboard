@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s7z-iW-Bsm">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,8 +65,8 @@
                                             <constraint firstAttribute="trailing" secondItem="ElC-Mf-BBR" secondAttribute="trailing" id="kvs-m5-jNJ"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imgThumb" destination="ElC-Mf-BBR" id="IxP-kC-ldk"/>
-                                            <outlet property="lblName" destination="vM6-ok-5gG" id="0nW-8O-fWT"/>
+                                            <outlet property="imgThumb" destination="ElC-Mf-BBR" id="r8P-qE-EGS"/>
+                                            <outlet property="lblName" destination="vM6-ok-5gG" id="yCm-DT-FJE"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -87,25 +87,25 @@
                     <navigationItem key="navigationItem" id="vgh-Nx-oKV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AiM-gc-yKu">
                             <connections>
-                                <segue destination="Ng2-Av-hgR" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="SFh-TL-jbY"/>
+                                <segue destination="Ng2-Av-hgR" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="J84-8d-rpN"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="save" id="LqQ-au-GU8">
                                 <connections>
-                                    <action selector="onSaveTapped:" destination="VI2-nK-ly1" id="m7Z-Bf-7hM"/>
+                                    <action selector="onSaveTapped:" destination="VI2-nK-ly1" id="Zy1-n6-t4M"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="icon-photo" id="kkC-ZD-maP">
                                 <connections>
-                                    <action selector="onPhotoTapped:" destination="VI2-nK-ly1" id="PeU-XB-cpY"/>
+                                    <action selector="onPhotoTapped:" destination="VI2-nK-ly1" id="I22-8H-tfx"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionView" destination="RS5-5J-Wgc" id="PUV-u4-qyU"/>
-                        <outlet property="imgExample" destination="0N4-0n-ut3" id="m8b-21-1II"/>
+                        <outlet property="collectionView" destination="RS5-5J-Wgc" id="JtF-eH-pUH"/>
+                        <outlet property="imgExample" destination="0N4-0n-ut3" id="EOT-C5-1tX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwv-AM-zzm" userLabel="First Responder" sceneMemberID="firstResponder"/>

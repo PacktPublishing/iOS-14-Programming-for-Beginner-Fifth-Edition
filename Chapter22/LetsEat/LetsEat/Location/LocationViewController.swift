@@ -2,7 +2,7 @@
 //  LocationViewController.swift
 //  LetsEat
 //
-//  Created by iOS 14 Programming on 09/10/2020.
+//  Created by iOS 14 Programming on 28/10/2020.
 //
 
 import UIKit
@@ -10,9 +10,8 @@ import UIKit
 class LocationViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     let manager = LocationDataManager()
-    var selectedCity:LocationItem?
+    var selectedCity: LocationItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +24,7 @@ class LocationViewController: UIViewController {
             if data.isFound {
                 if indexPath.row == data.position {
                     cell.accessoryType = .checkmark
-                }
-                else { cell.accessoryType = .none}
+                } else { cell.accessoryType = .none }
             }
         }
         else {
@@ -44,6 +42,7 @@ private extension LocationViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
+
 // MARK: UITableViewDataSource
 extension LocationViewController: UITableViewDataSource {
     
@@ -57,10 +56,10 @@ extension LocationViewController: UITableViewDataSource {
         set(selected: cell, at: indexPath)
         return cell
     }
-
+    
 }
 
-//MARk: UITableViewDelegate
+// MARK: UITableViewDelegate
 extension LocationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) {

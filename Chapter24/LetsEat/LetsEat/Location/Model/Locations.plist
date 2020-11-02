@@ -76,13 +76,13 @@
 	</dict>
 	<dict>
 		<key>city</key>
-		<string>San Antoonio</string>
+		<string>San Antonio</string>
 		<key>state</key>
 		<string>TX</string>
 	</dict>
 	<dict>
 		<key>city</key>
-		<string>San Francisto</string>
+		<string>San Francisco</string>
 		<key>state</key>
 		<string>CA</string>
 	</dict>

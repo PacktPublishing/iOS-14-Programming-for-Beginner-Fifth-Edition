@@ -8,7 +8,7 @@
 	</array>
 	<key>com.apple.developer.parent-application-identifiers</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.mac.145610myname.LetsEat</string>
+		<string>$(AppIdentifierPrefix)com.myname.LetsEat</string>
 	</array>
 </dict>
 </plist>

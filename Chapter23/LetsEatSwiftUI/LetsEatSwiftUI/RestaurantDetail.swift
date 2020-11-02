@@ -2,7 +2,7 @@
 //  RestaurantDetail.swift
 //  LetsEatSwiftUI
 //
-//  Created by iOS 14 Programming on 19/10/2020.
+//  Created by iOS 14 Programming on 01/11/2020.
 //
 
 import SwiftUI
@@ -11,8 +11,8 @@ struct RestaurantDetail: View {
     var selectedRestaurant: RestaurantItem
     var body: some View {
         VStack {
-            MapView(lat: selectedRestaurant.lat, long: selectedRestaurant.long).frame(height: 250)
-            VStack(alignment: .leading) {
+            MapView(lat: selectedRestaurant.lat, long: selectedRestaurant.long).frame(height:250)
+            VStack(alignment: .leading){
                 Text(selectedRestaurant.title)
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -31,6 +31,8 @@ struct RestaurantDetail: View {
 
 struct RestaurantDetail_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantDetail(selectedRestaurant: testData[0])
+        NavigationView {
+            RestaurantDetail(selectedRestaurant: testData[0])
+        }
     }
 }
