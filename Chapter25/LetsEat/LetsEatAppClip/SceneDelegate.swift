@@ -22,18 +22,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             city = queryItems[0].name
             restaurantID = Int(queryItems[1].name)!
         }
-        if let vC = window?.rootViewController as? ViewController {
-            vC.selectedCity = city
-            vC.selectedRestaurantID = restaurantID
-        }
+        print(city)
+        print(restaurantID)
     }
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        if let userActivity = connectionOptions.userActivities.first {
+            self.scene(scene, continue: userActivity)
+        }
+        return
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,11 +45,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         
-        // At the time the book is written, some users are experiencing issues in passing environment variables to the app clip. The following block of code passes the city and restaurant id to the RestaurantDetail screen.
-        
         if let vC = window?.rootViewController as? ViewController {
-            vC.selectedCity = "Boston"
-            vC.selectedRestaurantID = 145237
+            vC.selectedCity = city
+            vC.selectedRestaurantID = restaurantID
         }
  
     }

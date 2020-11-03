@@ -1080,7 +1080,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mynametest123.LetsEat.LetsEatWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myname.LetsEat.LetsEatWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -1103,7 +1103,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mynametest123.LetsEat.LetsEatWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myname.LetsEat.LetsEatWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
