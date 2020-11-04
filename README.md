@@ -61,7 +61,7 @@ Click on the following link to see the Code in Action:
 * SwiftUI Cookbook [[Packt]](https://www.packtpub.com/product/swiftui-cookbook/9781838981860) [[Amazon]](https://www.amazon.com/dp/1838981861)
 
 ## Get to Know the Author
-**Ahmad Sahar **
+**Ahmad Sahar**
 is a trainer, presenter, and consultant at Tomafuwi Productions, specializing
 in conducting training courses for macOS and iOS, macOS Support Essentials certification
 courses, and iOS Development courses. He is a member of the DevCon iOS and
