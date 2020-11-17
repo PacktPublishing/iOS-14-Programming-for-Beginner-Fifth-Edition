@@ -85,6 +85,13 @@
 			path = LetsEat;
 			sourceTree = "<group>";
 		};
+		4655B22A25598CDC00240C16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		469865E125485A6A00434AEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +123,7 @@
 		46D6CED32548E3F300C4B94E /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				46D6CED52548E40700C4B94E /* View */,
+				4655B22A25598CDC00240C16 /* View */,
 				46D6CED42548E3FF00C4B94E /* Model */,
 				46D6CED62548E42C00C4B94E /* LocationViewController.swift */,
 			);
@@ -130,13 +137,6 @@
 				46D6CEDC2548E77300C4B94E /* LocationDataManager.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		46D6CED52548E40700C4B94E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		46E7C8482546F4490059036F /* Restaurants */ = {

@@ -1,6 +1,6 @@
 import UIKit
 
-// Arrays
+// arrays
 
 var shoppingList = ["Eggs", "Milk"]
 
@@ -29,7 +29,7 @@ for shoppingListItem in shoppingList[1...] {
     print(shoppingListItem)
 }
 
-// Dictionaries
+// dictionaries
 
 var contactList = ["Shah":"+60123456789", "Akhil":"+0223456789"]
 
@@ -55,7 +55,7 @@ for (name, contactNumber) in contactList {
     print("\(name) : \(contactNumber)")
 }
 
-// Sets
+// sets
 
 var movieGenres: Set = ["Horror", "Action", "Romantic Comedy"]
 

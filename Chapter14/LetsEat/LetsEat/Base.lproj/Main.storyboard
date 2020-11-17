@@ -289,9 +289,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tQw-Yb-7iX">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tQw-Yb-7iX">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="0.0" id="6OV-0y-N6o">
                                     <size key="itemSize" width="177" height="177"/>
@@ -424,6 +423,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GOC-gI-A9J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tQw-Yb-7iX" firstAttribute="leading" secondItem="GOC-gI-A9J" secondAttribute="leading" id="J1t-gp-6Sc"/>
+                            <constraint firstItem="tQw-Yb-7iX" firstAttribute="top" secondItem="GOC-gI-A9J" secondAttribute="top" id="fL6-io-TeL"/>
+                            <constraint firstItem="tQw-Yb-7iX" firstAttribute="bottom" secondItem="GOC-gI-A9J" secondAttribute="bottom" id="qTR-v8-Xpa"/>
+                            <constraint firstItem="tQw-Yb-7iX" firstAttribute="trailing" secondItem="GOC-gI-A9J" secondAttribute="trailing" id="zED-0c-Ycs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wFL-DE-Pqb"/>
                     <connections>

@@ -1,5 +1,7 @@
 import UIKit
 
+// if statement
+
 let isPictureVisible = false
 if isPictureVisible {
     print("Picture is visible")
@@ -29,6 +31,8 @@ if trafficLight == "Red" {
     print("Invalid Color")
 }
 
+// switch statement
+
 trafficLight = "Yellow"
 switch trafficLight {
 case "Red":
@@ -40,6 +44,8 @@ case "Green":
 default:
     print("Invalid color")
 }
+
+// optionals
 
 var spouseName: String?
 spouseName = nil

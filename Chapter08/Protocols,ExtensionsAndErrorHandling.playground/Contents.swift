@@ -1,5 +1,7 @@
 import UIKit
 
+// protocols
+
 protocol CalorieCountProtocol {
     var calories: Int { get }
     func description() -> String
@@ -18,6 +20,9 @@ struct Fries: CalorieCountProtocol {
     }
     
 }
+
+// extensions
+
 enum Sauce {
     case chili
     case tomato
@@ -49,6 +54,7 @@ for food in foodArray {
 }
 print(totalCalories)
 
+// error handling
 
 enum WebpageError: Error {
     case success

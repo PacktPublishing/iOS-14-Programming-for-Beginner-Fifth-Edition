@@ -1,25 +1,5 @@
 [
-   {
-      "id":115903,
-      "name":"Square Grouper",
-      "address":"304 E Hopkins Ave",
-      "city":"Aspen",
-      "state":"CO",
-      "area":"Denver / Colorado",
-      "postal_code":"81611",
-      "country":"US",
-      "phone":"9704294968",
-      "lat":39.190334,
-      "long":-106.820307,
-      "price":2,
-      "cuisines":[
-                  "Seafood",
-                  "American"
-                  ],
-      "reserve_url":"http://www.opentable.com/single.aspx?rid=115903",
-      "mobile_reserve_url":"http://mobile.opentable.com/opentable/?restId=115903",
-      "image_url":"https://resizer.otstatic.com/v2/profiles/legacy/115903.jpg"
-   },
+
    {
       "id":6946,
       "name":"Matsuhisa - Aspen",

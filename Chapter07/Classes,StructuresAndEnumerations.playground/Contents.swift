@@ -1,5 +1,7 @@
 import UIKit
 
+// classes
+
 class Animal {
     var name: String = ""
     var sound: String = ""
@@ -31,6 +33,8 @@ let cat = Mammal(name: "Cat", sound: "Mew", numberOfLegs: 4, breathesOxygen: tru
 print(cat.description())
 cat.makeSound()
 
+// structures
+
 struct Reptile {
     var name: String
     var sound: String
@@ -50,6 +54,8 @@ var snake = Reptile(name: "Snake", sound: "Hiss", numberOfLegs: 0, breathesOxyge
 print(snake.description())
 snake.makeSound()
 
+// value type
+
 struct SampleValueType {
     var sampleProperty = 10
 }
@@ -59,6 +65,8 @@ b.sampleProperty = 20
 print(a.sampleProperty)
 print(b.sampleProperty)
 
+// reference type
+
 class SampleReferenceType {
     var sampleProperty = 10
 }
@@ -67,6 +75,8 @@ var d = c
 c.sampleProperty = 20
 print(c.sampleProperty)
 print(d.sampleProperty)
+
+// enumerations
 
 enum TrafficLight {
     case red

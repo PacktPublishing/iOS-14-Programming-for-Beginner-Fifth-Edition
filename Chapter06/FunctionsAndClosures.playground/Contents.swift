@@ -1,5 +1,7 @@
 import UIKit
 
+// functions
+
 func serviceCharge(forMealPrice mealCost: Int) -> Int {
     return mealCost / 10
 }
@@ -61,6 +63,8 @@ func buySomething(itemValueField: String, cardBalance: Int) -> Int {
 
 print(buySomething(itemValueField: "10", cardBalance: 50))
 print(buySomething(itemValueField: "blue", cardBalance: 50))
+
+// closures
 
 var numbersArray = [2, 4, 6, 7]
 let myClosure = { (number: Int) -> Int in

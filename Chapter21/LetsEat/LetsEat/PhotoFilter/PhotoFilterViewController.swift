@@ -7,7 +7,7 @@
 
 import UIKit
 import AVFoundation
-import MobileCoreServices
+import CoreServices
 
 class PhotoFilterViewController: UIViewController {
     
