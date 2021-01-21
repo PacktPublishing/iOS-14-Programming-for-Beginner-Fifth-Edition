@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/ios-14-programming-for-beginners-fifth-edition/9781800209749)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1800209746).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # iOS 14 Programming for Beginners - Fifth Edition
 
 <a href="https://www.packtpub.com/product/iOS-14-Programming-for-beginners-fifth-edition/9781800209749"><img src="https://static.packt-cdn.com/products/9781800209749/cover/smaller" alt="iOS 14 Programming for Beginners - Fifth Edition" height="256px" align="right"></a>
