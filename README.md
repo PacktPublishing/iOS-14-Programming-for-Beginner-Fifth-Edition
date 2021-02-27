@@ -58,7 +58,8 @@ Click on the following link to see the Code in Action:
 ### Errata
 * Page 423: After point 2, a code block is missing. The code block is as follows:
 
-```//MARK: UITableViewDelegate
+```
+//MARK: UITableViewDelegate
 
 extension LocationViewController: UITableViewDelegate {
 
@@ -78,7 +79,8 @@ extension LocationViewController: UITableViewDelegate {
 
   }
 
-}```
+}
+```
 
 ### Related products <Other books you may enjoy>
 * Learn SwiftUI [[Packt]](https://www.packtpub.com/product/learn-swiftui/9781839215421) [[Amazon]](https://www.amazon.com/dp/1839215429)
