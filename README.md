@@ -56,7 +56,10 @@ Click on the following link to see the Code in Action:
 [YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe185F_1WQm7HyUuM3Vbn6PEVf)
 
 ### Errata
-* Page 423: After point 2, a code block is missing. The code block is as follows:
+
+* Page 423: Point 2 should be as follows:
+
+The UITableViewDelegate method that is triggered when a user taps a row in the table view is tableView(_:didSelectRowAt:). Add this method between the extension's curly braces. It should look like the following:
 
 ```
 //MARK: UITableViewDelegate
@@ -81,6 +84,7 @@ extension LocationViewController: UITableViewDelegate {
 
 }
 ```
+When the user taps a row on the Locations screen, a checkmark will appear in that row, and the selectedCity property is assigned the corresponding LocationItem instance in the locations array. For example, if you tap the third row, the LocationItem instance with the values "Charleston" and "NC" is assigned to selectedCity.
 
 ### Related products <Other books you may enjoy>
 * Learn SwiftUI [[Packt]](https://www.packtpub.com/product/learn-swiftui/9781839215421) [[Amazon]](https://www.amazon.com/dp/1839215429)
