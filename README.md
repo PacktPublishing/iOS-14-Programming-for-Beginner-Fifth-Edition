@@ -55,6 +55,31 @@ Click on the following link to see the Code in Action:
 
 [YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe185F_1WQm7HyUuM3Vbn6PEVf)
 
+### Errata
+* Page 423: After point 2, a code block is missing. The code block is as follows:
+
+```//MARK: UITableViewDelegate
+
+extension LocationViewController: UITableViewDelegate {
+
+  func tableView(_ tableView: UITableView, didSelectRowAt 
+
+  indexPath: IndexPath) {
+
+    if let cell = tableView.cellForRow(at: indexPath) {
+
+      cell.accessoryType = .checkmark 
+
+      selectedCity = manager.locationItem(at: indexPath)
+
+      tableView.reloadData()
+
+    }
+
+  }
+
+}```
+
 ### Related products <Other books you may enjoy>
 * Learn SwiftUI [[Packt]](https://www.packtpub.com/product/learn-swiftui/9781839215421) [[Amazon]](https://www.amazon.com/dp/1839215429)
 
