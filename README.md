@@ -102,3 +102,7 @@ robots.
 
 ## Other books by the author
 * [iOS 13 Programming for Beginners - Fourth Edition](https://www.packtpub.com/product/ios-13-programming-for-beginners-fourth-edition/9781838821906)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800209749">https://packt.link/free-ebook/9781800209749 </a> </p>
